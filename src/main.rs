@@ -17,7 +17,7 @@ async fn main() {
     let listener = match TcpListener::bind(ADDR).await {
         Ok(tcp_listener) => tcp_listener,
         Err(e) => {
-            panic!("Cannot bind to address {}, {}", ADDR, e.to_string());
+            panic!("Cannot bind to address {}, {}", ADDR, e);
         }
     };
     println!("Listening on {}", ADDR);

@@ -54,7 +54,7 @@ impl HttpRequest {
                 .map_err(|_| HttpRequestError::InvalidHeader)?;
             line = line.trim().to_string();
             // println!("header: {:#?}", line);
-            if line == "" {
+            if line.is_empty() {
                 break;
             }
             let words: Vec<&str> = line.split(": ").collect();
