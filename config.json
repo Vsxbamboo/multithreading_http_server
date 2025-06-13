@@ -1,0 +1,6 @@
+{
+	"host": "0.0.0.0",
+	"port": 8080,
+	"static_dir": "./public",
+	"concurrent_thread": 100
+}

@@ -73,7 +73,7 @@ impl HttpResponse {
     pub fn internal_server_error() -> Self {
         Self::new_with_status("500", "Internal Server Error")
     }
-    
+
     /// 501 Not Implemented
     pub fn not_implemented() -> Self {
         Self::new_with_status("501", "Not Implemented")
@@ -99,4 +99,3 @@ impl HttpResponse {
         self
     }
 }
-
