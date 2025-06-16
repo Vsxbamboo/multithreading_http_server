@@ -21,7 +21,7 @@ mod logger;
 
 #[tokio::main]
 async fn main() {
-    // 初始化日志系统
+    // init log
     logger::init_logger("./logs");
 
     // read config
